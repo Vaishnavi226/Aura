@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA | Contemporary Kitchen &amp; Bar</title>
+  <meta name="description" content="Experience thoughtfully prepared artisanal dishes, warm hospitality and a memorable atmosphere at AURA Contemporary Kitchen &amp; Bar.">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="AURA | Contemporary Kitchen &amp; Bar">
+  <meta property="og:description" content="Where every meal becomes a memory. Thoughtfully prepared dishes, warm hospitality, and timeless ambience.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:type" content="restaurant">
+
+  <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVBAR
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="AURA Restaurant Home">
+        <div class="brand-monogram">A</div>
+        <div class="brand-info">
+          <span class="brand-name">AURA</span>
+          <span class="brand-subtitle">Kitchen &amp; Bar</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons & Hamburger -->
+      <div class="nav-actions">
+        <button type="button" class="btn btn-primary btn-sm" data-open-modal="booking">
+          <span>Book a Table</span>
+        </button>
+
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer & Backdrop -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-link active">Home</a>
+      <a href="#menu" class="mobile-nav-link">Popular Dishes</a>
+      <a href="#about" class="mobile-nav-link">Our Story</a>
+      <a href="#experience" class="mobile-nav-link">Experience</a>
+      <a href="#reviews" class="mobile-nav-link">Reviews</a>
+      <a href="#contact" class="mobile-nav-link">Location &amp; Hours</a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <div class="mobile-nav-info">
+        <strong>AURA Contemporary Kitchen</strong><br>
+        42 Heritage Boulevard, Indiranagar<br>
+        Bengaluru, Karnataka 560038<br>
+        <span style="color: var(--accent-primary); font-weight: 600;">+91 98765 43210</span>
+      </div>
+      <button type="button" class="btn btn-primary" data-open-modal="booking" style="width: 100%;">
+        <span>Book a Table</span>
+      </button>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+
+    <!-- =======================================================================
+         2. HERO SECTION
+         ======================================================================= -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80" alt="Exquisite culinary dish crafted at AURA Restaurant" loading="eager">
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="star-icon">&#9733;</span>
+            <span>Artisanal Flavours &bull; Timeless Moments</span>
+          </div>
+
+          <h1>Where Every Meal Becomes a Memory</h1>
+
+          <p>
+            Experience thoughtfully prepared dishes, warm hospitality, and an atmosphere made for life’s most cherished occasions.
+          </p>
+
+          <div class="hero-actions">
+            <button type="button" class="btn btn-primary btn-lg" data-open-modal="booking">
+              <span>Book a Table</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+            <a href="#menu" class="btn btn-ghost-light btn-lg">
+              <span>View Menu</span>
+            </a>
+          </div>
+
+          <!-- Key Highlights Bar -->
+          <div class="hero-highlights">
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">4.9 &starf;</span>
+              <span class="hero-stat-label">Guest Rating</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">100%</span>
+              <span class="hero-stat-label">Organic Sourcing</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">Est. 2012</span>
+              <span class="hero-stat-label">Artisan Heritage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. POPULAR DISHES / MENU PREVIEW
+         ======================================================================= -->
+    <section class="dishes-section" id="menu">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Curated Culinary Selection</span>
+          <h2>Popular Dishes</h2>
+          <p>Crafted with seasonal botanicals, heritage spices, and time-honoured slow-cooking traditions.</p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="menu-filter-bar reveal">
+          <button type="button" class="filter-btn active" data-filter="all">All Dishes</button>
+          <button type="button" class="filter-btn" data-filter="starters">Small Plates &amp; Starters</button>
+          <button type="button" class="filter-btn" data-filter="mains">Signature Mains</button>
+          <button type="button" class="filter-btn" data-filter="desserts">Artisanal Desserts</button>
+        </div>
+
+        <!-- Dishes Grid -->
+        <div class="dishes-grid">
+
+          <!-- Card 1: Butter Garlic Paneer (Requested Example) -->
+          <article class="dish-card reveal delay-100" data-category="starters">
+            <div class="dish-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80" alt="Butter Garlic Paneer served with roasted garlic and fine herbs" loading="lazy">
+              <span class="dish-tag">Chef's Special</span>
+              <span class="dish-dietary" title="Vegetarian">&#127793;</span>
+            </div>
+            <div class="dish-body">
+              <div class="dish-header">
+                <h3 class="dish-name">Butter Garlic Paneer</h3>
+                <span class="dish-price">&#8377;320</span>
+              </div>
+              <p class="dish-desc">
+                Velvety cottage paneer simmered in brown butter, roasted aromatic hill garlic, fresh coriander emulsion, and crushed peppercorns.
+              </p>
+              <div class="dish-footer">
+                <span>Small Plates &bull; Mild Spice</span>
+                <span class="dish-action">Details &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Smoked Saffron Biryani -->
+          <article class="dish-card reveal delay-200" data-category="mains">
+            <div class="dish-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80" alt="Saffron Smoked Dum Biryani in traditional clay pot" loading="lazy">
+              <span class="dish-tag">Signature</span>
+              <span class="dish-dietary" title="Chef Specialty">&#10024;</span>
+            </div>
+            <div class="dish-body">
+              <div class="dish-header">
+                <h3 class="dish-name">Smoked Saffron Dum Biryani</h3>
+                <span class="dish-price">&#8377;480</span>
+              </div>
+              <p class="dish-desc">
+                Aged Dehradun basmati rice infused with Grade-A Kashmiri saffron, slow-braised cuts, caramelized sweet shallots, and fresh garden mint.
+              </p>
+              <div class="dish-footer">
+                <span>Claypot Cooked &bull; Aromatic</span>
+                <span class="dish-action">Details &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Woodfired Burrata & Heirloom Peach -->
+          <article class="dish-card reveal delay-300" data-category="starters">
+            <div class="dish-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Artisan Woodfired Burrata with fresh basil and peach" loading="lazy">
+              <span class="dish-tag">Seasonal</span>
+              <span class="dish-dietary" title="Vegetarian">&#127793;</span>
+            </div>
+            <div class="dish-body">
+              <div class="dish-header">
+                <h3 class="dish-name">Woodfired Burrata Flatbread</h3>
+                <span class="dish-price">&#8377;390</span>
+              </div>
+              <p class="dish-desc">
+                Handcrafted burrata over blistered sourdough, charred heirloom peaches, sweet basil oil, toasted pine nuts, and 12-year aged Modena balsamic.
+              </p>
+              <div class="dish-footer">
+                <span>Woodfired Oven &bull; Fresh</span>
+                <span class="dish-action">Details &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Slow-Braised Heritage Lamb -->
+          <article class="dish-card reveal delay-100" data-category="mains">
+            <div class="dish-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Slow-Braised Tender Lamb Shank with rich root vegetable jus" loading="lazy">
+              <span class="dish-tag">Popular</span>
+              <span class="dish-dietary" title="Slow Braised">&#128293;</span>
+            </div>
+            <div class="dish-body">
+              <div class="dish-header">
+                <h3 class="dish-name">Slow-Braised Lamb Shank</h3>
+                <span class="dish-price">&#8377;690</span>
+              </div>
+              <p class="dish-desc">
+                14-hour braised pasture-raised lamb shank resting on truffle potato mousseline, honey-glazed baby carrots, and rosemary reduction jus.
+              </p>
+              <div class="dish-footer">
+                <span>14-Hour Braise &bull; Rich</span>
+                <span class="dish-action">Details &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Chargrilled Herb-Crusted Salmon -->
+          <article class="dish-card reveal delay-200" data-category="mains">
+            <div class="dish-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80" alt="Crispy skin salmon with wild asparagus and lemon dill reduction" loading="lazy">
+              <span class="dish-tag">Catch of the Day</span>
+              <span class="dish-dietary" title="Seafood">&#127754;</span>
+            </div>
+            <div class="dish-body">
+              <div class="dish-header">
+                <h3 class="dish-name">Herb-Crusted Salmon</h3>
+                <span class="dish-price">&#8377;620</span>
+              </div>
+              <p class="dish-desc">
+                Crispy-skin Atlantic salmon fillet paired with crushed herbed new potatoes, charred wild asparagus spears, and citrus-dill velouté.
+              </p>
+              <div class="dish-footer">
+                <span>Pan Seared &bull; Gluten-Free</span>
+                <span class="dish-action">Details &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Dark Belgian Fondant & Gelato -->
+          <article class="dish-card reveal delay-300" data-category="desserts">
+            <div class="dish-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Molten Belgian chocolate lava cake with pistachio gelato" loading="lazy">
+              <span class="dish-tag">Sweet Indulgence</span>
+              <span class="dish-dietary" title="Dessert">&#127856;</span>
+            </div>
+            <div class="dish-body">
+              <div class="dish-header">
+                <h3 class="dish-name">Belgian Chocolate Fondant</h3>
+                <span class="dish-price">&#8377;340</span>
+              </div>
+              <p class="dish-desc">
+                Warm 70% Callebaut dark molten center served alongside churned Bronte pistachio gelato, hazelnut praline crumble, and gold leaf.
+              </p>
+              <div class="dish-footer">
+                <span>Baked to Order &bull; Decadent</span>
+                <span class="dish-action">Details &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- View Full Menu CTA Button -->
+        <div class="dishes-bottom-cta reveal">
+          <button type="button" class="btn btn-secondary btn-lg" id="viewFullMenuBtn">
+            <span>Explore Complete Menu</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. ABOUT / RESTAURANT STORY
+         ======================================================================= -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Left: Narrative Photo with Floating Badge -->
+          <div class="about-image-col reveal">
+            <div class="about-main-img-card">
+              <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1000&q=80" alt="Executive Chef plating an exquisite dining dish with tweezers" loading="lazy">
+            </div>
+            <div class="about-floating-badge">
+              <div class="about-badge-num">14+</div>
+              <div class="about-badge-text">Years of Culinary Craft &amp; Passion</div>
+            </div>
+          </div>
+
+          <!-- Right: Narrative Content -->
+          <div class="about-content-col reveal delay-200">
+            <span class="eyebrow">Our Story</span>
+            <h2>Made With Passion, Served With Heart</h2>
+
+            <div class="about-paragraphs">
+              <p>
+                Founded in 2012 by culinary visionaries, AURA was born from a simple belief: dining should be an immersive journey rather than a simple meal. We combine ancient slow-cooking secrets with contemporary culinary flair.
+              </p>
+              <p>
+                Every morning, our kitchen welcomes fresh organic produce harvested from partnered regional farmers, sustainably sourced coastal seafood, and hand-milled spices. From our crackling hearth to your table, our hospitality is attentive yet unobtrusive.
+              </p>
+            </div>
+
+            <div class="about-quote-box">
+              <p>
+                &ldquo;We don't just plate food; we curate moments where aroma, taste, and connection blend seamlessly.&rdquo;
+              </p>
+            </div>
+
+            <!-- Chef Signature & Details -->
+            <div class="about-chef-signature">
+              <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=150&q=80" alt="Chef Arjun Nair headshot" class="chef-avatar" loading="lazy">
+              <div class="chef-details">
+                <h4>Arjun Nair</h4>
+                <span>Executive Chef &bull; Culinary Director</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <button type="button" class="btn btn-primary" data-open-modal="booking">
+                <span>Reserve an Experience</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. EXPERIENCE / FEATURES
+         ======================================================================= -->
+    <section class="features-section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">The AURA Standard</span>
+          <h2>Crafted for All Your Senses</h2>
+          <p>Every small detail of our culinary sanctuary is designed to elevate your time with us.</p>
+        </div>
+
+        <div class="features-grid">
+
+          <!-- Feature 1 -->
+          <div class="feature-card reveal delay-100">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <!-- Leaf / Fresh Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13C4 7 11 2 11 2s7 5 7 11a7 7 0 0 1-7 7z"/><path d="M11 20v-9"/></svg>
+            </div>
+            <h3>Fresh Ingredients</h3>
+            <p>Direct farm-to-table partnerships ensure 100% seasonal freshness and zero chemical preservatives in our kitchen.</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card reveal delay-200">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <!-- Flame / Authentic Flavour Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            </div>
+            <h3>Authentic Flavours</h3>
+            <p>Centuries-old slow culinary techniques harmonised with modern gastronomic balance for rich, unforgettable depth.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card reveal delay-300">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <!-- Heart / Hospitality Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>Warm Hospitality</h3>
+            <p>Gracious, discreet, and deeply intuitive service dedicated to anticipating your comforts without ever intruding.</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card reveal delay-400">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <!-- Ambient Sparkle Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>Memorable Ambience</h3>
+            <p>Bespoke warm lighting, acoustic tranquility, and tactile linen finishes designed for lively conversations and romance.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. CUSTOMER REVIEWS / TESTIMONIALS
+         ======================================================================= -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Guest Experiences</span>
+          <h2>What Our Guests Say</h2>
+          <p>Read reflections from travelers, critics, and regulars who celebrate life’s milestones with us.</p>
+        </div>
+
+        <div class="reviews-carousel-wrapper reveal">
+          <div class="reviews-grid">
+
+            <!-- Review 1 -->
+            <div class="review-card">
+              <div>
+                <div class="review-stars" aria-label="5 stars rating">
+                  &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <blockquote class="review-quote">
+                  &ldquo;The Butter Garlic Paneer and Smoked Saffron Biryani were transcendent. The warmth of the staff and the candlelit ambience makes you want to linger for hours.&rdquo;
+                </blockquote>
+              </div>
+              <div class="review-author">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Priya and Aarav" class="review-avatar" loading="lazy">
+                <div class="review-author-info">
+                  <h4>Priya Sharma</h4>
+                  <span>Food Critic &amp; Frequent Diner</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+              <div>
+                <div class="review-stars" aria-label="5 stars rating">
+                  &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <blockquote class="review-quote">
+                  &ldquo;Every single dish was harmonised to perfection. The attention to detail from the host to the sommelier is unmatched in the city. A true culinary gem.&rdquo;
+                </blockquote>
+              </div>
+              <div class="review-author">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova" class="review-avatar" loading="lazy">
+                <div class="review-author-info">
+                  <h4>Vikram Mehra</h4>
+                  <span>Lifestyle &amp; Architecture Editor</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+              <div>
+                <div class="review-stars" aria-label="5 stars rating">
+                  &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <blockquote class="review-quote">
+                  &ldquo;We celebrated our 10th anniversary here last weekend. The private corner booth, personalized dessert note, and serene wine pairing made it genuinely unforgettable.&rdquo;
+                </blockquote>
+              </div>
+              <div class="review-author">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Marcus and Sarah" class="review-avatar" loading="lazy">
+                <div class="review-author-info">
+                  <h4>Ananya Deshmukh</h4>
+                  <span>Art Director</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Mobile Indicator Dots -->
+          <div class="reviews-dots" aria-hidden="true">
+            <button class="review-dot active" aria-label="Slide 1"></button>
+            <button class="review-dot" aria-label="Slide 2"></button>
+            <button class="review-dot" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. LOCATION + OPENING HOURS
+         ======================================================================= -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left Column: Details & Hours -->
+          <div class="contact-info-card reveal">
+            <div class="contact-info-header">
+              <span class="eyebrow">Visit Us</span>
+              <h2>Location &amp; Hours</h2>
+              <p>We invite you to join us for an unhurried dining experience in our heritage sanctuary.</p>
+            </div>
+
+            <!-- Contact List -->
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <!-- Map Pin Icon -->
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Address</h4>
+                  <p>42 Heritage Boulevard, 12th Main Road, Indiranagar, Bengaluru, 560038</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <!-- Phone Icon -->
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Reservations &amp; Enquiries</h4>
+                  <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <!-- WhatsApp Icon -->
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>WhatsApp Concierge</h4>
+                  <p><a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">Chat with Concierge &rarr;</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Opening Hours Box -->
+            <div class="hours-box">
+              <div class="hours-box-header">
+                <!-- Clock Icon -->
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Dining Service Timings</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Monday &ndash; Friday</span>
+                <span class="hours-time">11:00 AM &ndash; 11:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Saturday &ndash; Sunday</span>
+                <span class="hours-time">10:00 AM &ndash; 12:00 AM</span>
+              </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="contact-actions">
+              <button type="button" class="btn btn-primary" data-open-modal="booking">
+                <span>Book a Table</span>
+              </button>
+              <a href="https://wa.me/919876543210" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                <span>WhatsApp Us</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Map Embed / Visual Area -->
+          <div class="contact-map-col reveal delay-200">
+            <!-- Accessible clean Map frame -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9855562725927!2d77.63853117578208!3d12.972791487342673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a70e5b7b6b%3A0x6bcfd35cb6765798!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1709923849102!5m2!1sen!2sin" 
+              title="AURA Restaurant Location Map in Indiranagar, Bengaluru" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <!-- Map Floating Card -->
+            <div class="map-overlay-badge">
+              <div class="map-badge-title">Valet Parking Available</div>
+              <div class="map-badge-desc">Complimentary concierge valet service for all booked table guests.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. FINAL CALL-TO-ACTION (CTA)
+         ======================================================================= -->
+    <section class="cta-section">
+      <div class="cta-bg">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80" alt="AURA Restaurant candlelit evening dining room" loading="lazy">
+      </div>
+      <div class="cta-overlay"></div>
+
+      <div class="container">
+        <div class="cta-content reveal">
+          <span class="eyebrow" style="color: #FFFFFF;">Reserve Your Evening</span>
+          <h2>Ready for a Great Meal?</h2>
+          <p>
+            Reserve your table and make your next meal memorable. Whether it's an intimate celebration or a leisurely evening with friends, our tables await.
+          </p>
+          <div class="cta-button-group">
+            <button type="button" class="btn btn-primary btn-lg" data-open-modal="booking">
+              <span>Book a Table Now</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+            <a href="tel:+919876543210" class="btn btn-ghost-light btn-lg">
+              <span>Call +91 98765 43210</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       9. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand & Bio -->
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo" aria-label="AURA Restaurant Home">
+            <div class="brand-monogram">A</div>
+            <div class="brand-info">
+              <span class="brand-name" style="color: #FFFFFF;">AURA</span>
+              <span class="brand-subtitle" style="color: var(--text-light-muted);">Kitchen &amp; Bar</span>
+            </div>
+          </a>
+          <p>
+            An intimate culinary sanctuary presenting seasonal artisanal dining, woodfired craftsmanship, and heartfelt hospitality.
+          </p>
+          <!-- Social Media Icons -->
+          <div class="social-links" aria-label="Follow us on Social Media">
+            <!-- Instagram -->
+            <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <!-- Facebook -->
+            <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <!-- TripAdvisor -->
+            <a href="https://tripadvisor.com" class="social-icon-btn" aria-label="TripAdvisor" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Popular Dishes</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#experience">The Experience</a></li>
+            <li><a href="#reviews">Guest Reviews</a></li>
+            <li><a href="#contact">Location &amp; Hours</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Hours & Service -->
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <div class="footer-hours-list">
+            <div class="footer-hours-item">
+              <span>Monday &ndash; Friday</span>
+              <span>11:00 AM &ndash; 11:00 PM</span>
+            </div>
+            <div class="footer-hours-item">
+              <span>Saturday &ndash; Sunday</span>
+              <span>10:00 AM &ndash; 12:00 AM</span>
+            </div>
+            <div class="footer-hours-item" style="margin-top: 0.5rem;">
+              <span>Concierge Desk</span>
+              <span>+91 98765 43210</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter & Exclusive Tasting Invites -->
+        <div class="footer-col">
+          <h4>Culinary Journal</h4>
+          <p style="font-size: 0.875rem; margin-bottom: 1rem; color: var(--text-light-muted);">
+            Subscribe to receive private chef tasting invitations and seasonal menu preview announcements.
+          </p>
+          <form class="footer-newsletter-form" id="newsletterForm">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Your email address" required aria-label="Email address for newsletter">
+              <button type="submit" class="newsletter-btn">Join</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2025 AURA Contemporary Kitchen &amp; Bar. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Allergen Guide</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       10. RESERVATION MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-card">
+      <!-- Close Button -->
+      <button type="button" class="modal-close-btn" id="closeModalBtn" aria-label="Close Reservation Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-header">
+        <span class="eyebrow">Table Reservation</span>
+        <h3 id="modalTitle">Book Your Experience</h3>
+        <p>Complete the details below to request your table. Our host will confirm within 15 minutes.</p>
+      </div>
+
+      <form class="booking-form" id="bookingForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookName">Full Name *</label>
+            <input type="text" id="bookName" placeholder="e.g. Rohan Kapoor" required>
+            <span class="form-error-msg">Please enter your full name.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="bookPhone">Phone / WhatsApp *</label>
+            <input type="tel" id="bookPhone" placeholder="e.g. +91 98765 43210" required>
+            <span class="form-error-msg">Valid phone number required.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookGuests">Guests *</label>
+            <select id="bookGuests" required>
+              <option value="">Select party size</option>
+              <option value="1 Guest">1 Guest (Solo Dining)</option>
+              <option value="2 Guests" selected>2 Guests (Intimate Table)</option>
+              <option value="3-4 Guests">3 &ndash; 4 Guests (Standard Booth)</option>
+              <option value="5-6 Guests">5 &ndash; 6 Guests (Family Table)</option>
+              <option value="7+ Guests">7+ Guests (Private Dining Hall)</option>
+            </select>
+            <span class="form-error-msg">Please choose number of guests.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="bookDate">Date *</label>
+            <input type="date" id="bookDate" required>
+            <span class="form-error-msg">Please select a valid date.</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="bookTime">Preferred Time Slot *</label>
+          <select id="bookTime" required>
+            <option value="">Select time slot</option>
+            <optgroup label="Lunch Service">
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="1:00 PM">1:00 PM</option>
+              <option value="1:30 PM">1:30 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+            </optgroup>
+            <optgroup label="Dinner Service">
+              <option value="7:00 PM" selected>7:00 PM</option>
+              <option value="7:30 PM">7:30 PM</option>
+              <option value="8:00 PM">8:00 PM</option>
+              <option value="8:30 PM">8:30 PM</option>
+              <option value="9:00 PM">9:00 PM</option>
+              <option value="9:30 PM">9:30 PM</option>
+              <option value="10:00 PM">10:00 PM</option>
+            </optgroup>
+          </select>
+          <span class="form-error-msg">Please pick a dining slot.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="bookNotes">Special Notes or Dietary Preferences</label>
+          <textarea id="bookNotes" rows="2" placeholder="Birthday, anniversary, vegan, nut allergies, or quiet corner request..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary booking-submit-btn">
+          <span>Confirm Reservation Request</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="toastContainer">
+    <div class="toast" id="bookingToast" role="alert" aria-live="assertive">
+      <div class="toast-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="9 12 12 15 16 10"/></svg>
+      </div>
+      <div class="toast-message">
+        <h4>Reservation Confirmed</h4>
+        <p>Your table booking request has been received. We will send a confirmation SMS shortly.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Scroll back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Vanilla JavaScript Logic -->
+  <script src="js/script.js"></script>
+</body>
+</html>

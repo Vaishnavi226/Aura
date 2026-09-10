@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * -------------------------------------------------------------------------- */
   const navToggle = document.getElementById('navToggle');
   const mobileNav = document.getElementById('mobileNav');
+  const mobileNavClose = document.getElementById('mobileNavClose');
   const mobileBackdrop = document.getElementById('mobileNavBackdrop');
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
@@ -60,6 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
         openMobileMenu();
       }
     });
+
+    if (mobileNavClose) {
+      mobileNavClose.addEventListener('click', closeMobileMenu);
+    }
 
     if (mobileBackdrop) {
       mobileBackdrop.addEventListener('click', closeMobileMenu);
